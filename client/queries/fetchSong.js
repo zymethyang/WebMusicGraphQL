@@ -5,6 +5,11 @@ export default gql`
         song(id:$id){
             title
             id
+            lyrics{
+                id
+                content
+                likes
+            }
         }
     }
 `;
